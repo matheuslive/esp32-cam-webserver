@@ -9,7 +9,6 @@
 #include "time.h"
 #include <ESPmDNS.h>
 
-
 /* This sketch is a extension/expansion/reork of the 'official' ESP32 Camera example
  *  sketch from Expressif:
  *  https://github.com/espressif/arduino-esp32/tree/master/libraries/ESP32/examples/Camera/CameraWebServer
@@ -38,13 +37,12 @@
 
 // Primary config, or defaults.
 #if __has_include("myconfig.h")
-    struct station { const char ssid[65]; const char password[65]; const bool dhcp;};  // do no edit
+	struct station { const char ssid[65]; const char password[65]; const bool dhcp;};  // do no edit
     #include "myconfig.h"
 #else
     #warning "Using Defaults: Copy myconfig.sample.h to myconfig.h and edit that to use your own settings"
     #define WIFI_AP_ENABLE
     #define CAMERA_MODEL_AI_THINKER
-    struct station { const char ssid[65]; const char password[65]; const bool dhcp;}
     stationList[] = {{"ESP32-CAM-CONNECT","InsecurePassword", true}};
 #endif
 
@@ -137,7 +135,6 @@ char httpURL[64] = {"Undefined"};
 char streamURL[64] = {"Undefined"};
 
 // Counters for info screens and debug
-int8_t streamCount = 0;          // Number of currently active streams
 unsigned long streamsServed = 0; // Total completed streams
 unsigned long imagesServed = 0;  // Total image requests
 
