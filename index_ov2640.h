@@ -253,8 +253,12 @@ const uint8_t index_ov2640_html[] = R"=====(<!doctype html>
                   <option value="500">500ms (2fps)</option>
                   <option value="333">333ms (3fps)</option>
                   <option value="200">200ms (5fps)</option>
+                  <option value="125">125ms (8fps)</option>
                   <option value="100">100ms (10fps)</option>
+                  <option value="66">66ms (15fps)</option>
                   <option value="50">50ms (20fps)</option>
+                  <option value="40">40ms (25fps)</option>
+                  <option value="33">33ms (30fps)</option>
                   <option value="0" selected="selected">Disabled</option>
                 </select>
               </div>
