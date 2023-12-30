@@ -61,7 +61,9 @@ figure img {
   display: block;
   max-width: 100%;
   width: auto;
-  height: auto;
+  height: calc(100vmin - 60px);
+  object-fit: contain;
+  object-position: top;
   border-radius: 4px;
   margin-top: 8px;
 }
